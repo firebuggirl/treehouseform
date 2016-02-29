@@ -466,8 +466,7 @@ button {
   height: auto; }
 
 /* Style text in 1st two input fields*/
-input[type="text"]:required,
-input[type="email"]:required {
+input::-moz-placeholder {
   text-align: right;
   font-style: italic;
   font-weight: 700;
