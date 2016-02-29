@@ -1,0 +1,174 @@
+/*MEDIA QUERY*/
+@media (min-width: 760px) {
+
+
+  section {
+    margin-top: 125px; }
+
+  section:nth-child(2) > p:nth-child(2) {
+    margin-bottom: 30px; }
+
+
+    form{
+      width: 70%;
+      margin: auto;
+    }
+    select,
+    textarea,
+    button {
+      width: 70%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: auto; }
+
+      body > form:nth-child(3) > hr:nth-child(1),
+      body > form:nth-child(3) > hr:nth-child(2),
+      body > form:nth-child(3) > hr:nth-child(5){
+      width: 94%;
+      text-align: center;
+      
+    }
+
+    fieldset#contact.form{
+      margin-top: 30px;
+    }
+    #newsletter > legend:nth-child(1) {
+      margin-left: 0%;
+    }
+
+
+    legend,
+    #contact > legend:nth-child(1) {
+      margin-bottom: 30px;
+      margin-top: 20px;
+      margin-left: 0%;
+      text-align: left;
+    }
+
+    label {
+      margin-left: 0px;
+     }
+
+
+    input[type="text"],
+    input[type="email"] {
+      width: 70%;
+      /*float: right;*/
+     margin-left: 28%;
+      margin-top: -150px;
+      margin-bottom: 35px;
+
+      height: 65px;
+
+    }
+
+    /*select menus don't have a type attribute- Style by #ID instead*/
+    /**
+     * Known limitation: by default, Chrome and Safari on OS X allow very limited
+     * styling of `select`, unless a `border` property is set.
+     */
+    #state {
+    /*  width: 75%;*/
+      margin-left: 28%;
+      margin-top: -130px;
+      margin-bottom: 35px;
+      /*height: 65px;*/
+      border: 4px solid $grey;
+
+    }
+
+
+
+    #zipcode {
+      width: 30%;
+      margin-right: 175px;
+      /*margin-top: -135px;*/
+      margin-bottom: 35px;
+      /*height: 30px;*/
+      /*float:right;*/
+    }
+
+    #language{
+      margin-top: -50px;
+      /*width: 75%;*/
+      margin-left: 28%;
+      height: 65px;
+      border: 4px solid $grey;
+    }
+
+    hr:nth-child(5){
+      width: 96%;
+      margin-left: 0%;
+      margin-bottom: 20px;
+    }
+
+
+    #newsletter > p:nth-child(2) {
+      margin-left: -2px;
+    }
+
+     form:nth-child(1) > p:nth-child(35),
+      form:nth-child(1) > p:nth-child(51),
+      input#html_news,
+      input#css_news,
+      input#javascript_news,
+      form:nth-child(1) > p:nth-child(45),
+      input#html,
+      input#plain_text {
+        margin-left: 0%; }
+
+    #newsletter > p:nth-child(2),
+    #newsletter > p:nth-child(12),
+    #newsletter > p:nth-child(18) {
+          margin-left: 0%;
+        }
+
+    label.light{
+      padding-left: 7px;
+    }
+
+    textarea{
+      width: 100%;
+      margin-left: -1%;
+      margin-top: 0px;
+    }
+
+    button{
+      width: 100%;
+      margin-left: -1%;
+      margin-top: 30px;
+    }
+
+    footer {
+      margin-bottom: 150px;
+      }
+    }
+
+
+  /*@media (min-width:980px){
+    #state,
+    #language{
+      width: 73%;
+    }
+  }
+
+  @media (min-width: 1280px){
+    #state,
+    #language{
+      width: 72%;
+    }
+    button{
+      width: 97%;
+    }
+  }
+
+  @media (min-width: 1920px){
+    #state,
+    #language{
+      width: 66%;
+    }
+    button{
+      width: 95.5%;
+    }
+  }*/

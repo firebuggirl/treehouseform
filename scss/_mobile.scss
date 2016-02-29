@@ -1,0 +1,241 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+/*html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}*/
+
+* {
+  font-family: 'Merriweather', serif;
+
+  -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+
+}
+
+
+
+body {
+  margin: 0px;
+  background-color: darken($rust, 10%);
+}
+
+h3 {
+  color: $beige; }
+
+h4,
+h5,
+p {
+  color: $beige; }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-display: flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  background-color: $grey;
+  /*box-shadow: 0 -3px 0 rgba(116, 130, 143, 0.8) inset;*/
+  border-bottom: 5px solid darken($grey, 10%);
+  color: white;
+  /* Doesn't work with Flex? height: calc(10vh + 10px);*/
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0px; }
+
+section {
+  margin-top: 135px;
+  margin-bottom: 25px;
+  text-align: center;
+  width: 95%;
+  margin-left: 2.5%; }
+
+form:nth-child(1) > h3:nth-child(1) {
+  text-align: center;
+  padding-top: 25px; }
+
+
+
+
+section:nth-child(2) > p:nth-child(2){
+  text-align: center;
+  margin-right: 1%;
+  font-weight: lighter;
+}
+
+/*sign up for newsletter*/
+body > form:nth-child(3) > hr:nth-child(1) {
+  border: solid 1px darken($grey, 20%);
+  width: 90%;
+}
+
+body > form:nth-child(3) > hr:nth-child(2) {
+  border: solid 2px $grey;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+
+fieldset {
+  border: none;
+}
+
+legend{
+  color: $beige;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+
+label {
+  color: $beige;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 5%;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea,
+button {
+  border-radius: 3%;
+  font-size: 16px;
+  margin: 12px 0px;
+  outline: 0;
+  padding: 15px;
+  width: calc(100% - 10%);
+  background-color: $beige;
+  border: 4px solid $grey;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 5%;
+
+}
+
+input[type="text"],
+input[type="email"]{
+  height: 60px;
+}
+select,
+textarea,
+button{
+  height: auto;
+}
+
+/* Style text in 1st two input fields*/
+input[type="text"]:required,
+input[type="email"]:required {
+  text-align: right;
+  font-style: italic;
+  font-weight: 700;
+  color: darken($rust, 10%);
+
+}
+
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+#state:focus,
+#language:focus,
+textarea:focus {
+  border: 6px solid darken($rust, 30%);
+  transition: all .4s ease-in-out;
+  background-color: $lightergrey;
+}
+
+
+#zipcode{
+  width: 40%;
+}
+
+
+/*Contact Information*/
+h3:nth-child(5),
+h5 {
+  margin-left: 2%; }
+
+h5,
+p {
+  font-weight: lighter; }
+
+/*full name*/
+h5:nth-child(6) {
+  margin-bottom: 10px; }
+
+h5 {
+  margin-bottom: -2px; }
+
+/*hr*/
+form:nth-child(3) > hr:nth-child(5) {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 90%;
+  color: $grey; }
+
+
+
+/*newsletter h3*/
+form:nth-child(1) > h3:nth-child(34) {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 2%; }
+
+/*Newsletter down.....*/
+form:nth-child(1) > p:nth-child(35),
+form:nth-child(1) > p:nth-child(51),
+input#html_news,
+input#css_news,
+input#javascript_news,
+form:nth-child(1) > p:nth-child(45),
+input#html,
+input#plain_text {
+  margin-left: 5%; }
+
+/*checkboxes and radio buttons*/
+input#html_news,
+input#css_news,
+input#javascript_news,
+input#html,
+input#plain_text {
+  margin-bottom: 10px;
+
+}
+
+
+#newsletter > p:nth-child(2),
+#newsletter > p:nth-child(12),
+#newsletter > p:nth-child(18) {
+  margin-left: 5%;
+  margin-bottom: 30px;
+}
+
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: $grey;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  border: 5px solid darken($grey, 10%);
+  margin-top: 18px;
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 100px;
+}
