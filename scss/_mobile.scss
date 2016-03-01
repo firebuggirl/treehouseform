@@ -98,9 +98,16 @@ label {
   margin-bottom: 20px;
   margin-left: 5%;
 }
+/*username input field*/
+/*#contact > input:nth-child(33){
+  margin-top: 25px;
+}*/
+
+
 
 input[type="text"],
 input[type="email"],
+input[type="password"],
 select,
 textarea,
 button {
@@ -139,13 +146,21 @@ input::-moz-placeholder {
   color: darken($rust, 10%);
 }
 
-
+#submit{
+  text-align: center;
+  margin-left: 5%;
+  height: 40px;
+  background-color: $beige;
+  color: darken($rust, 30%);
+}
 
 input[type="text"]:focus,
 input[type="email"]:focus,
+input[type="password"]:focus,
 #state:focus,
 #language:focus,
-textarea:focus {
+textarea:focus,
+#submit {
   border: 6px solid darken($rust, 30%);
   transition: all .4s ease-in-out;
   background-color: $lightergrey;
