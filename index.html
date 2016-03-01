@@ -19,14 +19,7 @@
 
       </section>
 
-      <form action="index.html" method="POST" onsubmit="return checkForm(this);">
-        <label for="username">Username:</label><input type="text" name="username" placeholder="Required" required><br>
-        <label for="password">Password:</label><input type="password" name="password" placeholder="Required" required><br>
-        <label for="confirmpassword">Confirm Password:</label><input type="password" name="confirmpassword" placeholder="Required" required><br>
-        <p><input type="submit" id="submit"></p>
-      </form>
-
-        <form action="index.html" method="POST" >
+        <form action="index.html" method="POST" onsubmit="return checkForm(this);">
           <hr>
           <hr>
         <fieldset class="form" id="contact">
@@ -152,34 +145,42 @@
 
         <textarea rows="6" cols="42" name="comment">
         </textarea>
-        <button type="submit">Sign Up</button>
+
       </fieldset>
-      </form>
 
 
+      <fieldset class="form" id="signup">
+        <legend>Sign Up</legend>
+          <label>Username:</label><input type="text" name="username" placeholder="Required" required><br>
+          <label>Password:</label><input type="password" name="password" placeholder="Required" required><br>
+          <label>Confirm Password:</label><input type="password" name="confirmpassword" placeholder="Required" required><br>
+          <button type="submit">Sign Up</button>
+      </fieldset>
+
+</form>
 
 
-      <footer><p>Copyright The Code Review</p></footer>
+    <footer><p>Copyright The Code Review</p></footer>
 
-<script type="text/javascript">
- //enable support for the placeholder attribute in INPUT fields at least for Internet Explorer 8+, Firefox and Opera
-  // ref: http://diveintohtml5.org/detect.html
-  function supports_input_placeholder()
-  {
-    var i = document.createElement('input');
-    return 'placeholder' in i;
-  }
-
-  if(!supports_input_placeholder()) {
-    var fields = document.getElementsByTagName('INPUT');
-    for(var i=0; i < fields.length; i++) {
-      if(fields[i].hasAttribute('placeholder')) {
-        fields[i].defaultValue = fields[i].getAttribute('placeholder');
-        fields[i].onfocus = function() { if(this.value == this.defaultValue) this.value = ''; }
-        fields[i].onblur = function() { if(this.value == '') this.value = this.defaultValue; }
+    <script type="text/javascript">
+     //enable support for the placeholder attribute in INPUT fields at least for Internet Explorer 8+, Firefox and Opera
+      // ref: http://diveintohtml5.org/detect.html
+      function supports_input_placeholder()
+      {
+        var i = document.createElement('input');
+        return 'placeholder' in i;
       }
-    }
-  }
+
+      if(!supports_input_placeholder()) {
+        var fields = document.getElementsByTagName('INPUT');
+        for(var i=0; i < fields.length; i++) {
+          if(fields[i].hasAttribute('placeholder')) {
+            fields[i].defaultValue = fields[i].getAttribute('placeholder');
+            fields[i].onfocus = function() { if(this.value == this.defaultValue) this.value = ''; }
+            fields[i].onblur = function() { if(this.value == '') this.value = this.defaultValue; }
+          }
+        }
+      }
 
 </script>
 

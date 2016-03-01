@@ -437,10 +437,6 @@ label {
   margin-bottom: 20px;
   margin-left: 5%; }
 
-/*username input field*/
-/*#contact > input:nth-child(33){
-  margin-top: 25px;
-}*/
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -470,6 +466,9 @@ textarea,
 button {
   height: auto; }
 
+select {
+  color: #a8423d; }
+
 /* Style text in 1st two input fields*/
 input::-moz-placeholder {
   text-align: right;
@@ -477,20 +476,12 @@ input::-moz-placeholder {
   font-weight: 700;
   color: #a8423d; }
 
-#submit {
-  text-align: center;
-  margin-left: 5%;
-  height: 40px;
-  background-color: #ECDDBE;
-  color: #5d2422; }
-
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 #state:focus,
 #language:focus,
-textarea:focus,
-#submit {
+textarea:focus {
   border: 6px solid #5d2422;
   transition: all .4s ease-in-out;
   background-color: #C0C0C0; }
@@ -573,6 +564,12 @@ footer {
 
 /*MEDIA QUERY*/
 @media (min-width: 760px) {
+  h3 {
+    font-size: 23px; }
+
+  legend {
+    font-size: 18px; }
+
   section {
     margin-top: 125px; }
 
@@ -583,9 +580,6 @@ footer {
   form {
     width: 70%;
     margin: auto; }
-
-  #submit {
-    width: 90%; }
 
   select,
   textarea,
