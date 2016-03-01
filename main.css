@@ -467,7 +467,8 @@ button {
   height: auto; }
 
 select {
-  color: #a8423d; }
+  color: #a8423d;
+  height: 62px; }
 
 /* Style text in 1st two input fields*/
 input::-moz-placeholder {
