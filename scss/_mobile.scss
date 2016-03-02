@@ -215,12 +215,12 @@ input#plain_text {
 
 }
 
-
 #newsletter > p:nth-child(2),
-#newsletter > p:nth-child(12),
-#newsletter > p:nth-child(18) {
+#newsletter > p:nth-child(12)
+{
   margin-left: 5%;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 

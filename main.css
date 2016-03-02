@@ -539,10 +539,10 @@ input#plain_text {
   margin-bottom: 10px; }
 
 #newsletter > p:nth-child(2),
-#newsletter > p:nth-child(12),
-#newsletter > p:nth-child(18) {
+#newsletter > p:nth-child(12) {
   margin-left: 5%;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  font-weight: bold; }
 
 button {
   padding: 19px 39px 18px 39px;
@@ -595,13 +595,15 @@ footer {
   body > form:nth-child(3) > hr:nth-child(2),
   body > form:nth-child(3) > hr:nth-child(5) {
     width: 94%;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 10px; }
 
   fieldset#contact.form {
     margin-top: 30px; }
 
   #newsletter > legend:nth-child(1) {
-    margin-left: 0%; }
+    margin-left: 0%;
+    margin-bottom: 5px; }
 
   legend,
   #contact > legend:nth-child(1) {
