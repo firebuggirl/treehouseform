@@ -354,13 +354,6 @@ td,
 th {
   padding: 0; }
 
-/* apply a natural box layout model to all elements, but allowing components to change */
-/*html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}*/
 * {
   font-family: 'Merriweather', serif;
   -webkit-box-sizing: border-box;
@@ -387,14 +380,14 @@ header {
   -webkit-justify-content: center;
   -webkit-align-items: center;
   background-color: #525564;
-  /*box-shadow: 0 -3px 0 rgba(116, 130, 143, 0.8) inset;*/
   border-bottom: 5px solid #3b3d48;
   color: white;
   /* Doesn't work with Flex? height: calc(10vh + 10px);*/
   width: 100%;
   height: 90px;
   position: fixed;
-  top: 0px; }
+  top: 0px;
+  z-index: 1; }
 
 section {
   margin-top: 135px;
@@ -475,6 +468,18 @@ input::-moz-placeholder {
   text-align: right;
   font-style: italic;
   font-weight: 700;
+  color: #a8423d; }
+
+input::-webkit-input-placeholder {
+  text-align: right;
+  font-style: italic;
+  font-weight: 500;
+  color: #a8423d; }
+
+input:-ms-input-placeholder {
+  text-align: right;
+  font-style: italic;
+  font-weight: 500;
   color: #a8423d; }
 
 input[type="text"]:focus,
@@ -596,7 +601,8 @@ footer {
   body > form:nth-child(3) > hr:nth-child(5) {
     width: 94%;
     text-align: center;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin-right: 4%; }
 
   fieldset#contact.form {
     margin-top: 30px; }
@@ -613,7 +619,9 @@ footer {
     text-align: left; }
 
   label {
-    margin-left: 0px; }
+    margin-left: 0px;
+    position: relative;
+    top: 13px; }
 
   input[type="text"],
   input[type="email"],
@@ -631,31 +639,25 @@ footer {
    * styling of `select`, unless a `border` property is set.
    */
   #state {
-    /*  width: 75%;*/
     margin-left: 28%;
     margin-top: -130px;
     margin-bottom: 35px;
-    /*height: 65px;*/
     border: 4px solid #525564; }
 
   #zipcode {
     width: 30%;
     margin-right: 175px;
-    /*margin-top: -135px;*/
-    margin-bottom: 35px;
-    /*height: 30px;*/
-    /*float:right;*/ }
+    margin-bottom: 35px; }
 
   #language {
     margin-top: -50px;
-    /*width: 75%;*/
     margin-left: 28%;
     height: 65px;
     border: 4px solid #525564; }
 
   hr:nth-child(5) {
     width: 96%;
-    margin-left: 0%;
+    margin-left: 1.5%;
     margin-bottom: 20px; }
 
   #newsletter > p:nth-child(2) {
@@ -677,12 +679,14 @@ footer {
     margin-left: 0%; }
 
   label.light {
-    padding-left: 7px; }
+    padding-left: 7px;
+    position: relative;
+    top: 1px; }
 
   textarea {
     width: 100%;
     margin-left: -1%;
-    margin-top: 0px; }
+    margin-top: 10px; }
 
   button {
     width: 100%;
