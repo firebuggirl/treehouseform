@@ -422,7 +422,8 @@ legend {
   color: #ECDDBE;
   font-weight: bold;
   margin-left: 6%;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  font-size: 19px; }
 
 label {
   color: #ECDDBE;
@@ -696,8 +697,8 @@ footer {
     margin-top: 10px; }
 
   button {
-    width: 100%;
-    margin-left: -1%;
+    width: 98.5%;
+    margin-left: -.5%;
     margin-top: 30px; }
 
   footer {

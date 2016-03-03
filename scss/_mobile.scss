@@ -83,6 +83,7 @@ legend{
   font-weight: bold;
   margin-left: 6%;
   margin-bottom: 5%;
+  font-size: 19px;
 }
 
 
@@ -98,7 +99,8 @@ input[type="email"],
 input[type="password"],
 select,
 textarea,
-button {
+button
+ {
   border-radius: 3%;
   font-size: 16px;
   margin: 12px 0px;
@@ -114,6 +116,8 @@ button {
   margin-left: 5%;
 
 }
+
+
 
 input[type="text"],
 input[type="email"]{
