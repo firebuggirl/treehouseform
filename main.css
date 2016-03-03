@@ -555,7 +555,7 @@ input#plain_text {
   margin-bottom: 10px; }
 
 label.light {
-  margin-left: 2%;
+  margin-left: 1.75%;
   font-weight: lighter; }
 
 #newsletter > p:nth-child(2),
@@ -693,7 +693,6 @@ footer {
     margin-left: 0%; }
 
   label.light {
-    padding-left: -.75%;
     position: relative;
     top: 0px; }
 
