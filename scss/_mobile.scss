@@ -245,6 +245,8 @@ input#plain_text {
 label.light{
   margin-left: 1.75%;
   font-weight: lighter;
+  position: relative;
+  top: 1px;
 }
 #newsletter > p:nth-child(2),
 #newsletter > p:nth-child(12)

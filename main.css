@@ -556,7 +556,9 @@ input#plain_text {
 
 label.light {
   margin-left: 1.75%;
-  font-weight: lighter; }
+  font-weight: lighter;
+  position: relative;
+  top: 1px; }
 
 #newsletter > p:nth-child(2),
 #newsletter > p:nth-child(12) {
@@ -635,7 +637,7 @@ footer {
   label {
     margin-left: 0px;
     position: relative;
-    top: 13px; }
+    top: 16px; }
 
   input[type="text"],
   input[type="email"],
@@ -693,8 +695,9 @@ footer {
     margin-left: 0%; }
 
   label.light {
+    margin-left: 1.25%;
     position: relative;
-    top: 0px; }
+    top: 1px; }
 
   textarea {
     width: 100%;
