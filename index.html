@@ -180,7 +180,7 @@
           if(fields[i].hasAttribute('placeholder')) {
             fields[i].defaultValue = fields[i].getAttribute('placeholder');
             fields[i].onfocus = function() { if(this.value == this.defaultValue) this.value = ''; }
-            fields[i].onblur = function() { if(this.value == '') this.value = this.defaultValue; }
+            fields[i].onblur = function() { if(this.value === '') this.value = this.defaultValue; }
           }
         }
       }
