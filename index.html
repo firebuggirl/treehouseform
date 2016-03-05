@@ -142,11 +142,11 @@
         <input type="radio" id="plain_text" value="plain_text" name="newsletter"><label for="plain_text" class="light">Plain text</label><br>
         <br>
 
-        <label> Other topics you'd like to hear about</label>
+        <label for="comment"> Other topics you'd like to hear about</label>
         <br>
         <br>
 
-        <textarea rows="6" cols="42" name="comment">
+        <textarea rows="6" cols="42" name="comment" id="comment">
         </textarea>
 
       </fieldset>
@@ -179,8 +179,8 @@
         for(var i=0; i < fields.length; i++) {
           if(fields[i].hasAttribute('placeholder')) {
             fields[i].defaultValue = fields[i].getAttribute('placeholder');
-            fields[i].onfocus = function() { if(this.value == this.defaultValue) this.value = ''; }
-            fields[i].onblur = function() { if(this.value === '') this.value = this.defaultValue; }
+            fields[i].onfocus = function() { if(this.value == this.defaultValue) this.value = ''; };
+            fields[i].onblur = function() { if(this.value === '') this.value = this.defaultValue; };
           }
         }
       }
